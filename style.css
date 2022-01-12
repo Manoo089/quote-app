@@ -43,12 +43,17 @@ main {
 
 .block-quote__container {
     color: rgba(0, 0, 0, 0.8);
-    margin-top: 10rem;
-    padding: 0 2rem;
-    font-size: 3rem;
+    margin-top: 5rem;
+    font-size: calc(2rem + 0.625vw);
     line-height: 1.4;
     letter-spacing: 0.1rem;
-    max-width: 50ch;
+}
+
+@media screen and (min-width: 768px) {
+    .block-quote__container {
+        padding: 0 3rem;
+        max-width: 50ch;
+    }
 }
 
 .blockquote {
@@ -57,5 +62,5 @@ main {
 
 .author {
     color: rgba(0, 0, 0, 0.5);
-    font-size: 2.5rem;
+    font-size: calc(1.5rem + 0.625vw);
 }
